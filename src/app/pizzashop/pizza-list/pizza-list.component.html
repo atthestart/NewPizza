@@ -1,0 +1,34 @@
+<!-- <p>pizza-list works!</p> -->
+<!-- <div *ngIf="selectedPizza" class="selectedPizza">
+    <app-pizza-list [pizza]="selectedPizza"></app-pizza-list>
+</div>     -->
+<div class="myBody">
+    <div class ="style" >
+       <b> {{ title }}</b>
+    </div>
+<div class = "container">
+    <ul class="nav">
+   <button class="button button5" routerLink="/pizza/pizza-list" >VIEW MENU</button>
+   <!-- <button class="button button5" routerLink="/pizza/pizza-delete">DELETE FROM CART</button> -->
+   <button class="button button5" routerLink="/pizza/pizza-list/cart">CART</button>
+    </ul>
+    
+  </div>
+</div>
+  <br>
+<div class="container-fluid">
+
+        <div class="container" class="pizzaList" class="viewMenu">
+                
+            <div class="row" *ngFor="let pizza of pizzaList"(click)="onSelection(pizza)" >
+                   
+                <div class="col-md-4">{{pizza.name}}</div>
+                <div class="col-md-4">{{pizza.price | currency:'INR'}}</div>
+                <a class="col-md-4" (click)="addToCart(pizza)">ADD TO CART</a>
+            </div>
+            
+        </div>
+    </div>
+  
+    
+    

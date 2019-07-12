@@ -1,0 +1,21 @@
+
+
+
+
+
+    <div class="container" class="pizzaList" class="viewMenu">
+       <div><a routerLink="/pizza/admin/pizza-list/addPizza">ADD PIZZA</a></div> 
+       
+        <div class="row" *ngFor="let pizza of pizzaList" >
+               
+            <div class="col-md-4">{{pizza.name}}</div>
+            <div class="col-md-4">{{pizza.price | currency:'INR'}}</div>
+            <div class="col-md-2" (click)="onSelection(pizza)">Click for edit </div>
+        </div>
+        
+    </div>
+
+    <div *ngIf="selectedPizza" class="selectedPizza">
+        <app-admin-edit [pizza]="selectedPizza"></app-admin-edit>
+    </div>
+

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.myBody{
+    background-image:linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url("assets/pizza.jpg");
+    background-repeat: no-repeat;
+    height: 657px;
+    background-size: cover;
+}
+.button5 {
+    background-color: black;
+    color:white;
+    border: 2px solid #555555;
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    
+  }
+  .style{ 
+    font-size: 80px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .viewMenu{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Courier New", Courier, monospace;
+    background-color: black;
+    color:white;
+  }

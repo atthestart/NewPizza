@@ -1,0 +1,13 @@
+<!-- <a routerLink="/pizza/pizza-add">ADD</a> -->
+<div class="container">
+<form>
+<div class="form-group">
+        <h3 class="viewMenu">YOUR ORDER</h3>
+        <div *ngFor="let pizza of pizzas" class="viewMenu">
+          <span class="col-md-6">{{ pizza.name }}</span>
+          <span class="col-md-6">{{ pizza.price | currency:'INR'}}</span>
+          <div routerLink="/pizza/pizza-list/cart/delete">DELETE</div>
+        </div>
+</div>
+</form>
+</div>
